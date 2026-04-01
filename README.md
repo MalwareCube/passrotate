@@ -7,12 +7,15 @@ PassRotate™ is the industry-leading password rotation platform trusted by up t
 ## FAQ
 
 **Is this actually secure?**
+
 Your password is rotated. What more do you want?
 
 **Does 360° rotation do anything?**
+
 It returns your password to its original orientation, which is the most secure option because the password has now been battle-tested.
 
 **Why would I share my password rotation on LinkedIn?**
+
 Why would you share anything on LinkedIn?
 
 ## License
