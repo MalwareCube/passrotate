@@ -3,7 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2316a34a'/><text x='16' y='23' text-anchor='middle' font-size='20' fill='white'>↻</text></svg>">
 <title>PassRotate™ — Password Rotation Compliance</title>
+
+<!-- Primary Meta -->
+<meta name="description" content="Rotate your password in accordance with your organization's security policy. Enterprise-grade password rotation, issued in spite of NIST SP 800-63B guidelines.">
+<meta name="author" content="PassRotate Security Solutions">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://passrotate.hax.wiki/">
+<meta property="og:title" content="PassRotate™ — Password Rotation Compliance">
+<meta property="og:description" content="Enterprise-grade password rotation. Rotate your passwords 90° to 360° in compliance with organizational security policy. NIST SP 800-63B discouraged.">
+<meta property="og:image" content="https://passrotate.hax.wiki/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="PassRotate™">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://passrotate.hax.wiki/">
+<meta name="twitter:title" content="PassRotate™ — Password Rotation Compliance">
+<meta name="twitter:description" content="Enterprise-grade password rotation. Rotate your passwords 90° to 360° in compliance with organizational security policy. NIST SP 800-63B discouraged.">
+<meta name="twitter:image" content="https://passrotate.hax.wiki/og-image.png">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://passrotate.hax.wiki/">
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -36,7 +62,7 @@
   .header {
     background: var(--white);
     border-bottom: 1px solid var(--border);
-    padding: 16px 32px;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,46 +70,46 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 21px;
     letter-spacing: -0.4px;
   }
   .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: var(--accent);
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
   }
 
   .main {
-    max-width: 620px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 48px 24px 80px;
+    padding: 56px 28px 96px;
   }
   .page-title {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 700;
     letter-spacing: -0.8px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .page-desc {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--text-secondary);
     line-height: 1.5;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 
   .banner {
     border-radius: var(--radius);
-    padding: 14px 18px;
-    font-size: 14px;
-    margin-bottom: 28px;
+    padding: 16px 20px;
+    font-size: 16px;
+    margin-bottom: 32px;
     line-height: 1.4;
   }
   .banner.warning {
@@ -101,27 +127,27 @@
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
-    margin-bottom: 20px;
+    padding: 28px;
+    margin-bottom: 24px;
   }
   .card-label {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text-tertiary);
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   .password-input {
     width: 100%;
-    padding: 14px 16px;
+    padding: 16px 18px;
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 8px;
     color: var(--text);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 15px;
+    font-size: 18px;
     outline: none;
     transition: border-color 0.2s;
   }
@@ -132,31 +158,31 @@
   .password-input::placeholder {
     color: var(--text-tertiary);
     font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .config-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 16px;
+    gap: 14px;
+    margin-bottom: 20px;
   }
   .config-item label {
     display: block;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--text-secondary);
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
   .config-item select {
     width: 100%;
-    padding: 10px 12px;
+    padding: 12px 14px;
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 8px;
     color: var(--text);
     font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     outline: none;
     cursor: pointer;
     appearance: none;
@@ -171,13 +197,13 @@
 
   .rotate-btn {
     width: 100%;
-    padding: 14px;
+    padding: 16px;
     background: var(--accent);
     color: white;
     border: none;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.15s;
@@ -201,7 +227,7 @@
   }
   .rotated-text {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 600;
     color: var(--accent);
     transition: transform 0.8s cubic-bezier(0.34,1.56,0.64,1);
@@ -210,7 +236,7 @@
 
   .success-msg {
     display: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #15803d;
     padding: 12px 16px;
     background: var(--accent-bg);
@@ -251,12 +277,12 @@
   .log-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px;
+    font-size: 15px;
   }
   .log-table th {
     text-align: left;
-    padding: 8px 12px;
-    font-size: 11px;
+    padding: 10px 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--text-tertiary);
@@ -264,11 +290,11 @@
     font-weight: 600;
   }
   .log-table td {
-    padding: 10px 12px;
+    padding: 12px 14px;
     border-bottom: 1px solid var(--border);
   }
   .log-table tr:last-child td { border-bottom: none; }
-  .log-table .mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+  .log-table .mono { font-family: 'JetBrains Mono', monospace; font-size: 14px; }
   .log-table .compliant { color: var(--accent); font-weight: 600; }
   .empty-log {
     text-align: center;
@@ -365,10 +391,10 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.15s;
@@ -433,8 +459,8 @@
 
   .footer {
     text-align: center;
-    padding: 32px 24px 20px;
-    font-size: 11px;
+    padding: 36px 28px 24px;
+    font-size: 13px;
     color: var(--text-tertiary);
   }
 
@@ -574,7 +600,7 @@
     const msg = document.getElementById('successMsg');
 
     el.textContent = pw;
-    el.style.fontSize = '26px';
+    el.style.fontSize = '32px';
     resultArea.classList.add('visible');
     msg.classList.remove('visible');
     el.classList.remove('spin-continuous');
@@ -583,8 +609,8 @@
     const container = document.querySelector('.rotated-display');
     const maxWidth = container.clientWidth - 48;
     if (el.scrollWidth > maxWidth) {
-      let fontSize = 25;
-      while (el.scrollWidth > maxWidth && fontSize > 12) {
+      let fontSize = 31;
+      while (el.scrollWidth > maxWidth && fontSize > 14) {
         fontSize -= 1;
         el.style.fontSize = fontSize + 'px';
       }
